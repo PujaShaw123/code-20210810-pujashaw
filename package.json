@@ -4,7 +4,7 @@
   "description": "This is a Calculator",
   "main": "bmi_calc.js",
   "scripts": {
-    "start": "./bin/www",
+    "start": "node bmi_calc",
     "test": "mocha --timeout 10000"
   },
   "keywords": [
