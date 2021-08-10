@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BMI CALCULATOR</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            table,th,td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th,td {
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>BMI CALCULATION RESULT</h1>
+        <hr/><br/>
+        <table align="center">
+            <tr>
+                <th>Index</th>
+                <th>BMI Value</th>
+                <th>BMI Category</th>
+                <th>Health Risk</th>
+            </tr>
+            <% result.forEach((res) => { %>
+            <tr>
+                <td><%= res.index %></td>
+                <td><%= res.calculatedBMI %></td>
+                <td><%= res.bmi_category %></td>
+                <td><%= res.health_risk %></td>
+            </tr>
+            <% }) %>
+        </table>
+    </body>
+</html>

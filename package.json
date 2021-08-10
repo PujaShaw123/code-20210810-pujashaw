@@ -1,0 +1,29 @@
+{
+  "name": "bmi-calculator",
+  "version": "1.0.0",
+  "description": "This is a Calculator",
+  "main": "bmi_calc.js",
+  "scripts": {
+    "start": "./bin/www",
+    "test": "mocha --timeout 10000"
+  },
+  "keywords": [
+    "bmi",
+    "calculator"
+  ],
+  "author": "Puja",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-http": "4.2.1",
+    "mocha": "5.2.0",
+    "supertest": "^1.0.1"
+  },
+  "dependencies": {
+    "@types/node": "^16.4.13",
+    "bmi-calc": "^2.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "stream-json": "^1.7.2"
+  }
+}
